@@ -4,10 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "postinstall": "yarn rollup --config rollup.config.js ",
     "emulators": "firebase emulators:start"
   },
   "dependencies": {
-    "firebase": "7.15.1",
-    "firebase-tools": "8.4.2"
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "firebase": "7.16.1",
+    "firebase-tools": "8.6.0",
+    "rollup": "^2.22.2"
   }
 }

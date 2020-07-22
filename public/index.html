@@ -5,23 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to Firebase Hosting</title>
-
-  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
 </head>
 
 <body>
-  <script>
-    var config = {
-      databaseURL: "http://localhost:9000?ns=undefined",
-      projectId: "emulator-test-1",
-    };
-    firebase.initializeApp(config);
-    firebase.setLogLevel("silent")
-    console.log("pushing")
-    firebase.database().ref('/path').push('value')
-      .then(() => console.log("pushed"))
-      .catch(() => console.log("caught"));
+  <script src="index.js"> 
   </script>
 </body>
 
